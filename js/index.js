@@ -31,18 +31,15 @@ function c(bt){
 function igual(){
     var res = document.getElementById("resultado")
     var resultado = res.innerHTML
-
     if(resultado){
-        console.log()
         res.innerHTML = eval(conta)
+        resultado = res.innerHTML
         if(resultado.length > 14){
-        document.getElementById("resultado").innerHTML = resultado.substring(0, resultado.length = 10)
-        console.log(resultado.length)   
-        
-    }
-    var numero = document.getElementById("resultado").innerHTML
-    conta = numero
-
+            document.getElementById("resultado").innerHTML = resultado.substring(0, 10)
+            console.log(resultado.length)   
+        }
+        var numero = document.getElementById("resultado").innerHTML
+        conta = numero
     }
     
     
