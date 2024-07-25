@@ -21,22 +21,28 @@ function back(){
     var resultado = document.getElementById("resultado").innerHTML
     document.getElementById("resultado").innerHTML = resultado.substring(0, resultado.length -1)
 }
-function c(){
+function c(bt){
     document.getElementById("resultado").innerHTML = ""
+    if(bt === 1){
+        conta = " "
+    }
+    
 }
 function igual(){
     var res = document.getElementById("resultado")
     var resultado = res.innerHTML
-    
+
     if(resultado){
         console.log()
         res.innerHTML = eval(conta)
         if(resultado.length > 14){
         document.getElementById("resultado").innerHTML = resultado.substring(0, resultado.length = 10)
-        console.log(resultado.length)
-        conta = " "
+        console.log(resultado.length)   
         
     }
+    var numero = document.getElementById("resultado").innerHTML
+    conta = numero
+
     }
     
     
